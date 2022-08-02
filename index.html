@@ -4,20 +4,65 @@
     <meta charset="utf-8">
     <title>SMITH</title>
     <style>
-      h1{
+      @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+      body{
+        background-image:url('water.jpg');
+        background-size:100%;
+        align:center;
+      }
+      #header{
+        /*border-bottom:4px solid green;*/
+      }
+      #contents{
+        margin:0;
+        position:relative;
+        top:150px;
+      }
+      table{
+        width:700px;
         text-align:center;
+        position:relative;
+      }
+      h1{
+        font-family:'Shadows Into Light', sans-serif;
+        font-size:50px;
+        text-align:center;
+        margin:5;
       }
       h4{
-        text-align:right;
-        margin-inline-end:200px;
+        background-color:rgba(255,255,255,0.5);
+        font-family: sans-serif;
+        font-size:15px;
+        font-weight:lighter;
+        text-align:center;
+        padding:20px;
+        margin:50px;
+        position:relative;
+        top:140px;
+      }
+      img{
+        width:80px;
+        height:80px;
       }
     </style>
   </head>
   <body>
-    <h1>ULSAN LOVERS CLUB</h1>
-    <h4>SY HI JW</h4>
-    <span><a href="day1.html">DAY1</a></span>
-    <span><a href="day2.html">DAY2</a></span>
-    <span><a href="day3.html">DAY3</a></span>
+    <div id="header">
+      <h1>ULSAN LOVERS CLUB !</h1>
+    </div>
+    <div id="contents">
+      <table align="center">
+        <tr>
+          <td><a href="day1.html"><img src="circle4.png" title="DAY1"></a></td>
+            <td><a href="day2.html"><img src="circle2.png" title="DAY2"></a></td>
+            <td><a href="day3.html"><img src="circle3.png" title="DAY3"></a></td>
+          </tr>
+        </table>
+        <h4>It was always you falling for me<br>
+          Now there's always time calling for me<br>
+          I'm the light blinking at the end of the road<br>
+          Blink back to let me know
+        </h4>
+      </div>
   </body>
 </html>
