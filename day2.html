@@ -4,16 +4,88 @@
     <meta charset="utf-8">
     <title>SMITH-DAY2</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-      h1{
-        font-family:'Shadows Into Light', sans-serif;
-        text-align: center;
-        border-bottom: 2px solid;
-        padding:5px;
-        margin:20px;
-        margin-left: 0;
-        margin-right: 0;
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+      @font-face {
+      font-family: 'LeeSeoyun';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+        h1{
+          font-family:'Shadows Into Light', sans-serif;
+          text-align: center;
+          border-bottom: 1px solid;
+          padding:5px;
+          margin-top:20px;
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+        h6{
+          text-align: right;
+          margin-right: 9px;
+          margin-top:0;
+          margin-bottom: 0;
+          text-decoration: underline;
+        }
+        h3{
+          margin:0;
+        }
+        #home{
+          font-family:'Shadows Into Light', sans-serif;
+          font-size: 10pt;
+          font-weight: bold;
+          text-align: center;
+          padding:5px;
+          margin:0;
+          margin-left: 0;
+          margin-right: 0;
+          background-color: lightgrey;
+        }
+        a{
+          color:black;
+          text-decoration: none;
+        }
+        .griid{
+          display:grid;
+          grid-template-rows: 0.7fr 0.2fr 4.5fr 0.5fr;
+        }
+        .grd{
+          display:grid;
+          grid-template-columns: 1fr 3fr;
+          margin-left: 10px;
+        }
+        #check{
+          background-image: url('paper.jpg');
+          background-size: 100%;
+          height:500px;
+          font-family: 'LeeSeoyun', sans-serif;
+          padding:20px;
+          margin-right:20px;
+        }
+        html, body{
+          margin:0;
+          height:100%;
+          overflow-y: scroll;
+        }
+        img{
+          display:block;
+          width:270px;
+          height:330px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .image{
+          display: flex;
+          overflow-y:scroll;
+          height:540px;
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        .aa{
+          float: left;
+          margin: 5px;
+        }
       .grid{
         display:grid;
         grid-template-columns:1fr 1fr;
@@ -23,18 +95,46 @@
       }
     </style>
   </head>
-  <body>
-    <h1>DAY 2</h1>
-    <div class="grid">
-      <a href="day1.html"><h6 style="text-align:left;">PREV</h6></a>
-      <a href="day3.html"><h6 style="text-align:right;">NEXT</h6></a>
-    </div>
-    <h3>CHECK - LIST</h3>
-    <p>콩이 산책<br>
-      대공원 산책<br>
-      해임 부모님과 편백찜<br>
-      태화강 드라이브<br>
-      우영우 시청<br>
-    </p>
+    <body class="griid">
+        <div>
+          <h1>DAY 2</h1>
+        </div>
+        <div class="grid">
+          <h6 style="text-align:left;"><a href="day1.html">PREV</a></h6>
+          <h6 style="text-align:right;"><a href="day3.html">NEXT</a></h6>
+        </div>
+        <div class="grd">
+          <div id="check">
+            <h3>&#60; CHECK - LIST &#62;</h3>
+            <p><del>✔️ 조식 먹기</del><br><br>
+              ✔️ 대왕암 공원<br><br>
+              ✔️ 일산 해수욕장<br><br>
+              ✔️ 양고기 먹기<br><br>
+              ✔️ 공중관람차 타기<br><br>
+              ✔️ 코인노래방 가기<br><br>
+              ✔️ 쫀듸기 술집 가기<br><br>
+            </p>
+          </div>
+          <div class="image">
+              <div class="aa"><a href="4cut.jpg" target="_blank"><img src="4cut.jpg" title="수연네컷"></div>
+              <div class="aa"><a href="noodle.jpg" target="_blank"><img src="noodle.jpg" title="조식 포기하고 호랭이쌀국수"></a></div>
+              <div class="aa"><a href="selca.jpg" target="_blank"><img src="selca.jpg" title="대왕암 가는 길>.<"></div>
+              <div class="aa"><a href="dragon.jpg" target="_blank"><img src="dragon.jpg" title="백신 맞은 용"></div>
+              <div class="aa"><a href="bounce.jpg" target="_blank"><img src="bounce.jpg" title="출렁출렁출렁다리"></div>
+              <div class="aa"><a href="otaku.jpg" target="_blank"><img src="otaku.jpg" title="오타쿠하트"></div>
+              <div class="aa"><a href="cafe.jpg" target="_blank"><img src="cafe.jpg" title="몽블랑체리라떼 맛있었는데.."></div>
+              <div class="aa"><a href="happy1.jpg" target="_blank"><img src="happy1.jpg" title="행복해보인다"></div>
+              <div class="aa"><a href="happy2.jpg" target="_blank"><img src="happy2.jpg" title="행복해보인다22"></div>
+              <div class="aa"><a href="smith.jpg" target="_blank"><img src="smith.jpg" title="바다오면 꼭 해야되는 것"></div>
+              <div class="aa"><a href="kkk.jpg" target="_blank"><img src="kkk.jpg" title="개앙이 그대로 바다로 들어가면 될 듯"></div>
+              <div class="aa"><a href="vv.jpg" target="_blank"><img src="vv.jpg" title="민망한 것치곤 꽤 많이 찍었던 롯백 앞 사진기"></div>
+              <div class="aa"><a href="lamb.jpg" target="_blank"><img src="lamb.jpg" title="몽골양다리바베큐"></div>
+              <div class="aa"><a href="jjon.jpg" target="_blank"><img src="jjon.jpg" title="Bring on the night"></div>
+              <div class="aa"><a href="drink.jpg" target="_blank"><img src="drink.jpg" title="확대~ 축소~ (응응)"></div>
+          </div>
+        </div>
+          <div id="home">
+            <a href="index.html" title="home">🏠ULSAN LOVERS CLUB</a>
+          </div>
   </body>
 </html>
